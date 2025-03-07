@@ -15,6 +15,7 @@ export class TaskService {
   }
 
   addTask(task: Task) {
+    task.priority=Number(task.priority);
     this.tasks.push(task);
   }
 

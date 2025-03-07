@@ -6,7 +6,7 @@
       <app-task-item
         [task]="task"
         (delete)="deleteTask(task.id)"
-        (toggleStatus)="toggleTaskStatus(task)">
+        (toggleStatus)="toggleTaskStatus(task.id)">
       </app-task-item>
     </div>
   </div>

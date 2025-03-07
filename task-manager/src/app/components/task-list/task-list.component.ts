@@ -26,8 +26,8 @@ export class TaskListComponent implements OnInit {
     this.tasks = this.taskService.getTasks();
   }
 
-  toggleTaskStatus(task: Task) {
-    this.taskService.toggleTaskStatus(task.id);
+  toggleTaskStatus(taskId: number) {
+    this.taskService.toggleTaskStatus(taskId);
     this.tasks = this.taskService.getTasks();
   }
 
