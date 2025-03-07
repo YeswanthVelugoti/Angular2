@@ -1,0 +1,10 @@
+<form (submit)="onSubmit()">
+    <input type="text" [(ngModel)]="taskTitle" placeholder="Enter task" required [ngModelOptions]="{standalone: true}"/>
+    <select [(ngModel)]="taskPriority" >
+      <option value="High">High</option>
+      <option value="Medium">Medium</option>
+      <option value="Low">Low</option>
+    </select>
+    <button type="submit">Add Task</button>
+  </form>
+  

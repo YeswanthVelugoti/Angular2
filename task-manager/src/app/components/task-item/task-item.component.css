@@ -1,0 +1,21 @@
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  .task-item.completed {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  .delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
