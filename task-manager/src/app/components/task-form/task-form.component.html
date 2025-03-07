@@ -1,9 +1,9 @@
 <form (submit)="onSubmit()">
-    <input type="text" [(ngModel)]="taskTitle" placeholder="Enter task" required [ngModelOptions]="{standalone: true}"/>
-    <select [(ngModel)]="taskPriority" >
-      <option value="High">High</option>
-      <option value="Medium">Medium</option>
-      <option value="Low">Low</option>
+    <input type="text" [(ngModel)]="taskTitle" [ngModelOptions]="{standalone: true}" placeholder="Enter task" required />
+    <select [(ngModel)]="taskPriority" [ngModelOptions]="{standalone: true}">
+      <option [value]="1">High</option>
+      <option [value]="2">Medium</option>
+      <option [value]="3">Low</option>
     </select>
     <button type="submit">Add Task</button>
   </form>
