@@ -7,7 +7,7 @@ import { PriorityPipe } from '../../pipes/priority.pipe';
   selector: 'app-task-item',
   imports: [HighlightDirective,PriorityPipe],
   templateUrl: './task-item.component.html',
-  styleUrl: './task-item.component.css'
+  styleUrls: ['./task-item.component.css']
 })
 export class TaskItemComponent {
 
@@ -20,7 +20,7 @@ export class TaskItemComponent {
   }
 
   onToggle() {
-    this.toggle.emit(this.task.id);
+    this.toggleStatus.emit(this.task.id);
   }
 
 }

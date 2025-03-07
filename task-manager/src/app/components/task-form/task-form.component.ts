@@ -19,11 +19,13 @@ export class TaskFormComponent {
   onSubmit() {
     if (!this.taskTitle.trim()) return; // Prevent adding empty tasks
 
+    const priorityMap: { [key: string]: number } = { "High": 1, "Medium": 2, "Low": 3 };
+
     const newTask: Task = {
       id: Date.now(),
       title: this.taskTitle,
       completed: false,
-      priority: this.taskPriority
+      priority: priorityMap[this.taskPriority] || 2
     };
 
     this.addTask.emit(newTask); // Emit new task
